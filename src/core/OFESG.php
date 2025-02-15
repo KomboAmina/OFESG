@@ -86,7 +86,7 @@ class OFESG{
 
         $desiredClass="\\OFESG\\".ucwords($this->area)."\\".ucwords($this->route)."\\".ucwords($this->route)."Model";
 
-        $defaultClass="\\OFESG\\Core\\OFESGModel";
+        $defaultClass="\\OFESG\\".ucwords($this->area)."\\".ucwords($this->area)."Model";
 
         return (class_exists($desiredClass)) ? new $desiredClass: new $defaultClass;
 

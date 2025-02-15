@@ -91,41 +91,12 @@ class BaseView{
 
         $baseFile="src".DS.$this->area.DS.$this->route.DS."base.php";
 
-        if($this->area=="front"){
-
-            $this->controller->model->interactor->saveInteraction("visit ".$this->controller->getCurrentURL());
-
-            if($this->route=="projects" && isset($_GET['levelb'])){
-
-                $project=$this->controller->model->getProjectFromSlug($_GET['levelb']);
-
-                if(!empty($project) && isset($project->id)){
-
-                    $this->controller->model->saveProjectHit($project->id);
-
-                }
-
-            }
-
-            if($this->route=="blog" && isset($_GET['levelb'])){
-
-                $blog=$this->controller->model->getBlogPostFromSlug($_GET['levelb']);
-
-                if(!empty($blog) && isset($blog->id)){
-
-                    $this->controller->model->saveBlogPostHit($blog->id);
-
-                }
-
-            }
-
-        }
-
         if(file_exists($baseFile)){
 
             include_once $baseFile;
 
         }
+        
         else{
 
             $this->show404();

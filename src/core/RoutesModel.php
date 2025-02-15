@@ -5,7 +5,7 @@ class RoutesModel extends BaseModel{
 
     public string $area;
 
-    private array $validRoutes;
+    public array $validRoutes;
 
     public function __construct(string $area){
 
@@ -35,7 +35,7 @@ class RoutesModel extends BaseModel{
 
                 //front
 
-                $valids=array("home","guides","downloads");
+                $valids=array("home","guides","downloads","news");
 
             break;
 
