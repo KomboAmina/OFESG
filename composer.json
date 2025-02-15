@@ -1,5 +1,5 @@
 {
-    "name": "komboamina/ofesg",
+    "name": "ofesg/ofesg",
     "description": "Office Fire and Electrical Safety Guide.",
     "type": "project",
     "require": {
@@ -12,13 +12,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Komboamina\\Ofesg\\": "src/"
+            "OFESG\\OFESG\\": "src/",
+            "OFESG\\OFESG\\Core\\":"src/core/",
+            "OFESG\\OFESG\\Front\\":"src/front/",
+            "OFESG\\OFESG\\Admin\\":"src/admin/"
         }
     },
     "authors": [
         {
             "name": "Amina Kombo",
-            "email": "kombo.work@gmail.com"
+            "email": "komboamina@protonmail.com"
         }
     ]
 }
