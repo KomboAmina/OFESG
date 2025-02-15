@@ -11,10 +11,10 @@
     },
     "autoload": {
         "psr-4": {
-            "OFESG\\OFESG\\": "src/",
-            "OFESG\\OFESG\\Core\\":"src/core/",
-            "OFESG\\OFESG\\Front\\":"src/front/",
-            "OFESG\\OFESG\\Admin\\":"src/admin/"
+            "OFESG\\": "src/",
+            "OFESG\\Core\\":"src/core/",
+            "OFESG\\Front\\":"src/front/",
+            "OFESG\\Admin\\":"src/admin/"
         }
     },
     "authors": [
